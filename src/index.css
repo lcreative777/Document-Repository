@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #006684;
+  --color-primary-container: #16acda;
+  --color-on-primary-container: #003b4e;
+  
+  --color-surface: #f8f9ff;
+  --color-surface-container-low: #eff4ff;
+  --color-surface-container: #e6eeff;
+  --color-surface-container-high: #dee9fc;
+  --color-surface-container-highest: #d9e3f6;
+  --color-surface-container-lowest: #ffffff;
+  
+  --color-on-surface: #121c2a;
+  --color-on-surface-variant: #3d484e;
+  
+  --color-outline-variant: #bdc8cf;
+  
+  --color-tertiary: #8b5000;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+}
+
+.glass-header {
+  @apply bg-white/80 backdrop-blur-xl;
+}
+
+.ambient-shadow {
+  box-shadow: 0 24px 48px rgba(0, 102, 132, 0.06);
+}
+
+.card-shadow {
+  box-shadow: 0 12px 24px rgba(0, 102, 132, 0.04);
+}
+
+.fab-shadow {
+  box-shadow: 0 16px 32px rgba(0, 102, 132, 0.24);
+}
